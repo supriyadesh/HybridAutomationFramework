@@ -51,6 +51,7 @@ public class ValidateLoginTest extends BaseTest {
 
 		landingPage.LoginApplication(input.get("username"), input.get("password"));
 		Assert.assertTrue(landingPage.verifyValidLogin().equalsIgnoreCase(titleProducts));
+		actions.sendKeys(Keys.RETURN).build().perform();
 		landingPage.logOut();
 
 	}

@@ -52,8 +52,8 @@ public class ValidateSubmitOrderTest extends BaseTest{
 			ProductCatalogue productCatalogue = landingPage.LoginApplication(username, password);
 
 			
-			Thread.sleep(3000);
-//			actions.sendKeys(Keys.RETURN).perform();
+			actions.sendKeys(Keys.RETURN).build().perform();
+
 
 			List<WebElement> productList = productCatalogue.getProductList();
 			productCatalogue.addProductToCart(productName);
@@ -71,15 +71,14 @@ public class ValidateSubmitOrderTest extends BaseTest{
 		}
 	}
 
-//	@Test(dependsOnMethods = { "AddToCart" })
 	@Test(dataProvider = "getData")
 	public void CheckoutProduct(String username, String password) throws InterruptedException {
 		// Testcase 4 start from here
 	
 		
 		ProductCatalogue productCatalogue = landingPage.LoginApplication(username, password);
-		Thread.sleep(3000);
-		actions.sendKeys(Keys.RETURN).perform();
+	
+		actions.sendKeys(Keys.RETURN).build().perform();
 
 		List<WebElement> productList = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(productName);

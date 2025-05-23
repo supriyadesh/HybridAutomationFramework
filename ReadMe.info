@@ -1,0 +1,16 @@
+# Hybrid Automation Framework
+
+This is a hybrid test automation framework using Java, Selenium, TestNG, and Maven.
+
+## Features
+- Page Object Model
+- TestNG Annotations
+- Extent Reports
+- Screenshots
+- ITestListeners
+- Dataprovider data fetch using json file
+- GlobalProperties for environment variables
+
+
+## How to Run
+- Run TestNG.xml
