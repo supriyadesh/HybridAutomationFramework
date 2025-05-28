@@ -11,6 +11,7 @@
           <include name="tearDown"/>
           <include name="launchApplication"/>
           <include name="InvalidLogin"/>
+          <include name="ValidLogin" invocation-numbers="0"/>
         </methods>
       </class> <!-- Automation.Tests.ValidateLoginTest -->
     </classes>
